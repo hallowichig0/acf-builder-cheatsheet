@@ -725,7 +725,23 @@ $builder
         ],
         'layout' => 'block',
         'sub_fields' => [],
-    ]);
+    ])
+        ->addText('text_field', [
+            'label' => 'Text Field',
+            'instructions' => '',
+            'required' => 0,
+            'wrapper' => [
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ],
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+        ])
+    ->endGroup();
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/group/)
 
@@ -748,7 +764,23 @@ $builder
         'layout' => 'table',
         'button_label' => '',
         'sub_fields' => [],
-    ]);
+    ])
+        ->addText('text_field', [
+            'label' => 'Text Field',
+            'instructions' => '',
+            'required' => 0,
+            'wrapper' => [
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ],
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+        ])
+    ->endRepeater();
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/repeater/)
 
@@ -767,19 +799,31 @@ $builder
         'button_label' => 'Add Row',
         'min' => '',
         'max' => '',
-    ]);
+    ])
+        ->addLayout('layout', [
+            'label' => 'Layout',
+            'display' => 'block',
+            'sub_fields' => [],
+            'min' => '',
+            'max' => '',
+        ])
+            ->addText('text_field', [
+                'label' => 'Text Field',
+                'instructions' => '',
+                'required' => 0,
+                'wrapper' => [
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ],
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ])
+    ->endFlexibleContent();
 
-$builder
-    ->addLayout('layout', [
-        'label' => 'Layout',
-        'display' => 'block',
-        'sub_fields' => [],
-        'min' => '',
-        'max' => '',
-    ]);
-
-$builder
-    ->addLayout(new FieldsBuilder());
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/flexible-content/)
 
