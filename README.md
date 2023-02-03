@@ -724,7 +724,6 @@ $builder
           'id' => '',
         ],
         'layout' => 'block',
-        'sub_fields' => [],
     ])
         ->addText('text_field', [
             'label' => 'Text Field',
@@ -758,12 +757,10 @@ $builder
           'class' => '',
           'id' => '',
         ],
-        'collapsed' => '',
         'min' => 0,
         'max' => 0,
         'layout' => 'table',
         'button_label' => '',
-        'sub_fields' => [],
     ])
         ->addText('text_field', [
             'label' => 'Text Field',
@@ -803,7 +800,6 @@ $builder
         ->addLayout('layout', [
             'label' => 'Layout',
             'display' => 'block',
-            'sub_fields' => [],
             'min' => '',
             'max' => '',
         ])
